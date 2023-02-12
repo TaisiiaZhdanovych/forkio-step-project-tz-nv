@@ -1,0 +1,44 @@
+@import "fonts";
+
+body{
+    box-sizing: border-box;
+    font-family: Roboto;
+    margin: 0;
+    // font-size: 50px;
+    background-color: #ffffff;
+    span {
+        color: red;
+    }
+    background: url("@img/tab_seo.jpg") 0 0 no-repeat;
+}
+
+// @media (max-width: 768px) {
+//     span {
+//         font-size: 20px;
+//     }
+// }
+
+.footer{
+    background-color: black;
+    &__container{
+        max-width: 1170px;
+        padding: 0 1em;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__title{
+        color: white;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__container{
+        padding: 0 15em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer__container{
+        padding: 0 25em;
+    }
+}
