@@ -3,6 +3,7 @@ import plumber from "gulp-plumber"; // Обробка помилок
 import notify from "gulp-notify"; // Сповіщення (підсказка)
 import browsersync from "browser-sync"; //Локальний сервер
 import newer from "gulp-newer"; // Перевірка оновлення
+import ifPlugin from "gulp-if"; 
 
 // Експортуємо об'єкт
 export const plugins = {
@@ -10,5 +11,6 @@ export const plugins = {
     plumber: plumber,
     notify: notify,
     browsersync: browsersync,
-    newer: newer
+    newer: newer,
+    if: ifPlugin
 }
