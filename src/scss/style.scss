@@ -1,72 +1,7 @@
+@use "sass:math";
 @import "fonts";
 @import "mixins";
 @import "variables";
 
 @import "normalize";
 @import "global";
-
-
-.rev__container{
-    // padding: 0 1.625rem;
-    flex-direction: column;
-    @include flex-center;
-    
-}
-.rev__title{
-    padding: 0 1rem;
-    margin-bottom: 1.69rem;
-    font-size: 1.625rem;
-    font-weight: 700;
-    line-height: 1.25rem;
-    color: $primary-violet;
-}
-.rev__subtitle{
-    margin-top: 0;
-    margin-bottom: 1.375rem;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.25rem;
-    color: $accent-grey;
-}
-.rev__list-views{
-    list-style-type: none;
-    @include flex-center;
-    flex-wrap: wrap;
-    padding: 0;
-    
-    
-}
-.rev__item-views{
-    justify-content: space-between;
-    margin-right: 0.94rem;
-    
-    margin-bottom: 1rem;
-    
-}
-.rev__btn-box{
-  
-   height: 1.625rem;
-   border-radius: 0.4rem;
-   border: 2px solid #DDDDDD;
-   text-align: right;
-   padding-right: 5px;
-   
-}
-.rev__btn{
-    border-radius: 0.2rem 0 0 0.2rem;
-    background: linear-gradient(to top, #F1F1F1, #FBFBFB);
-    border: none;
-    border-right: 2px solid #DDDDDD; ;
-    height: 1.625rem;
-      
-}
-
-
-.rev__svg{
-    
-    vertical-align:sub;
-}
-
-
