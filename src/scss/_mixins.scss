@@ -8,3 +8,16 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin button{
+    font-family: 'Montserrat', sans-serif;
+    background-color: $primary-violet;
+    color: $white;
+    border: none;
+    border-radius: rem(40);
+}
+@mixin buttonHover{
+    background-color: $white;
+    border: 1px solid $primary-violet;
+    color: $primary-violet;
+}
