@@ -7,6 +7,8 @@ import { plugins } from "./gulp/config/plagins.js";
 
 // Передаємо значення в глобальну змінну
 global.app = {
+    isBuild: process.argv.includes('--build'),
+    isDev: !process.argv.includes('--build'),
     path: path,
     gulp: gulp,
     plugins: plugins
