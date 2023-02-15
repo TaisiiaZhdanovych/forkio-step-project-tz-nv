@@ -10,7 +10,7 @@
 }
 
 .header__menu{
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 1rem;
 }
@@ -65,7 +65,7 @@
     
 }
 .logo__text{
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     text-transform: uppercase;
     font-weight: 700;
@@ -144,7 +144,7 @@
     }
 }
 .header__title{
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: rem(82);
     line-height: rem(82);
@@ -164,7 +164,7 @@
     }
 }
 .header__text{
-    font-family: 'Lato-Regular', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: rem(30);
@@ -183,7 +183,7 @@
     }
 }
 .header__info{
-    font-family: $fontMont;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-style: normal;
     color: $light-grey;
@@ -202,12 +202,12 @@
     }
 }
 
-.download{
+.header__download{
     @include flex-center;
     flex-direction: column;
     position: relative;
     top: 48px;
-    font-family: Montserrat-Regular, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     .download__button{
         @include button;
         width: rem(390);
