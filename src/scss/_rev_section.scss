@@ -5,6 +5,7 @@
     @include flex-center;
     margin: 0 auto;
     padding: 0 rem(24); 
+    min-width: rem(320);
 }
 &__title{
     text-align: center;

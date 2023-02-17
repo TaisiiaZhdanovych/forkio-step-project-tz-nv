@@ -121,8 +121,8 @@
         &__content-box{
            
               display: block;
-              margin-top: rem(70);
-              padding-top: rem(65); 
+              margin-top: rem(98);
+           
         }   
         &__container{
             display: flex;
@@ -137,26 +137,38 @@
             line-height: rem(50);
             position: absolute;
             margin-top: rem(10);
-            left: 51%;
+            left: 50%;
+            padding: 0;
           
            
          
         }
-        
+        &__list{
+            width: rem(550);
+        }
         &__item{
             display: flex;
-            justify-content:space-around;
+            justify-content:space-between;
             align-items: center;
-           
-            
+          
          }
         
         &__item-text-box{
                
             text-align: justify;
-           
+           width: rem(400);
+        margin-left: rem(20);
             
         }
+        &__img--onright{
+            margin-left: rem(15);
+
+        }
+        &__img-box{
+            width: rem(112);
+            margin-right: rem(20);
+        }
+
         &__img-screen{
                 
             width: rem(650);
