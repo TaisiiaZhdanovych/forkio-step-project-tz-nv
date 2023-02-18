@@ -1,10 +1,10 @@
 
 .rev{
+   
 &__container{
     flex-direction: column;
     @include flex-center;
     margin: 0 auto;
-    padding: 0 rem(24); 
     min-width: rem(320);
 }
 &__title{
@@ -90,7 +90,7 @@
 }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 481px) {
   .rev{
         
         &__title{
@@ -124,7 +124,7 @@
     
     }
 
-    @media (min-width: 1200px){
+    @media (min-width: 993px){
         .rev__title{
                 margin-top: rem(123);
                 margin-bottom: rem(35);

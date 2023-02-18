@@ -2,15 +2,17 @@
 
 
 .get{
-   
-   
-    &__container{
+
+    &__content-box{
+        margin: rem(95) auto rem(6) auto;
+    
         min-width: rem(320);
+    }
+    &__container{
         flex-direction: column;
         @include flex-center;
         margin: 0 auto;
-       
-    
+        
     }
     
     &__title{
@@ -22,7 +24,6 @@
         font-weight: 700;
         color: $primary-violet;
         margin-bottom: rem(-20);
-        margin-top: rem(95);
         
     }
     &__title::after{
@@ -64,9 +65,13 @@
         
     }
     &__screen-shot{
-       margin: rem(50) 0 rem(6) auto;  
+       margin-top: rem(95);
+       margin-left: auto;
+       margin-right: 0;
+        
     }
     &__img-screen{
+       
         width: rem(317);
         height: rem(381);
     }
@@ -75,7 +80,12 @@
     
     @media (min-width: 481px) {
         .get{
+           
+            &__content-box{
+                margin-top: rem(140);
+            }
             &__title{
+                margin-top: 0;
                 font-size: rem(42);
                 line-height: rem(44);
             }
@@ -106,10 +116,12 @@
                 justify-content: center;
                 align-items: center;
             }
+           
             &__img-screen{
-                
+            
                 width: rem(650);
                 height: rem(519);
+                
             }
         }
     }
@@ -117,81 +129,89 @@
     @media (min-width: 993px){
         
         .get{
+            background: #F4F4F4;
+            padding-bottom: rem(35);
             
         &__content-box{
-           
               display: block;
-              margin-top: rem(98);
-           
-        }   
+              margin: rem(180) auto 0 auto;
+              position: relative;
+        } 
+
         &__container{
             display: flex;
             flex-direction: row;
-           justify-content: space-between;
+            justify-content: space-between;
         
        
         }
        
         &__title{
-            font-size: rem(48);
-            line-height: rem(50);
+            
             position: absolute;
-            margin-top: rem(10);
-            left: 50%;
+            top: rem(90);
+            left: 52%;
             padding: 0;
-          
-           
-         
+        
         }
         &__list{
-            width: rem(550);
+            width: rem(500);
         }
         &__item{
             display: flex;
             justify-content:space-between;
             align-items: center;
           
-         }
+        }
         
         &__item-text-box{
                
             text-align: justify;
            width: rem(400);
-        margin-left: rem(20);
             
         }
         &__img--onright{
-            margin-left: rem(15);
+            margin-left: rem(20);
 
         }
-        &__img-box{
-            width: rem(112);
-            margin-right: rem(20);
+        &__screen-shot{
+            margin-top: rem(140);
         }
-
         &__img-screen{
                 
             width: rem(650);
             height: rem(519);
             
-            margin-left: rem(30);
         }
    
         
     
 }}
 
-@media (min-width: 993px){
-    .get{
-    background: #F4F4F4;
-     
-        }
-    }
+
     @media (min-width: 1200px){
         .get{
-           
             @include flex-center;
-            margin: 0 auto;
+            margin-top: rem(70);
             
-        }   
+        }
+
+        
+        .get__content-box{
+           
+              margin: rem(0) auto rem(0) auto;
+        }
+       
+        .get__title{
+            font-size: rem(48);
+            line-height: rem(50);
+        }
+        .get__list{
+            width: rem(550);
+            margin-right: rem(48);
+
+        }
+        .get__title{
+            left: 50%;
+        }
     }
