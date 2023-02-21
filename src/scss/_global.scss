@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -6,6 +10,6 @@ ul, li {
     list-style: none;
 }
 
-p, h1{ 
+p, h1, h2{ 
     margin: 0;
 }
