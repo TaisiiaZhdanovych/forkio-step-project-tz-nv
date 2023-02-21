@@ -2,7 +2,9 @@
 
 
 .get{
-
+   
+    font-family: 'Montserrat';
+    font-style: normal;
     &__content-box{
         margin: rem(95) auto rem(6) auto;
     
@@ -18,7 +20,6 @@
     &__title{
         text-align: center;
         padding: 0 rem(47);
-        font-family: 'Monserrat', sans-serif;
         font-size: rem(32);
         line-height: rem(38);
         font-weight: 700;
@@ -36,7 +37,7 @@
     }
     &__list{
         text-align: center;
-       width: rem(277);
+    min-width: rem(277);
        padding: 0;
     }
     &__item{
@@ -48,7 +49,7 @@
     }
 
     &__item-title{
-        font-family: 'Monserrat', sans-serif;
+        
         font-size: rem(16);
         font-weight: 400;
         line-height: rem(16);
@@ -57,7 +58,7 @@
     }
     
     &__item-text{
-        font-family: 'Lato', sans-serif;
+       
         font-size: rem(14);
         font-weight: 400;
         line-height: rem(21);
@@ -72,8 +73,9 @@
     }
     &__img-screen{
        
-        width: rem(317);
-        height: rem(381);
+       width: rem(317);
+       height: rem(381);
+    
     }
     }
     
@@ -83,6 +85,8 @@
            
             &__content-box{
                 margin-top: rem(140);
+                justify-content: center; 
+                align-items: center; 
             }
             &__title{
                 margin-top: 0;
@@ -91,12 +95,12 @@
             }
             &__list{
                 display: block;
-                width: rem(700);
+                margin: 0 auto;
 
             }
             &__item{
                display: flex;
-               justify-content:space-around;
+               justify-content:space-between;
                align-items: center;
                
             }
@@ -104,37 +108,49 @@
             &__item-text-box{
                
                 text-align: justify;
-                width: rem(500);
+                width: rem(300);
                 
             }
             &__img--onright{
-                margin-right: 0;
+                margin-left: rem(18);
+                
+                
              }
             &__img-box{
-                 width: rem(114);
+                width: rem(114);
                 text-align: center;
                 justify-content: center;
                 align-items: center;
+                margin-right: rem(20);
             }
            
             &__img-screen{
             
-                width: rem(650);
-                height: rem(519);
+                width: rem(700); 
+                height: rem(519); 
                 
             }
         }
     }
 
+    @media (min-width: 650px){
+        .get__item-text-box{
+             
+            
+         width: rem(500);
+            
+        }
+    }
     @media (min-width: 993px){
         
         .get{
             background: #F4F4F4;
             padding-bottom: rem(35);
+            padding-top: rem(98);
+            
             
         &__content-box{
               display: block;
-              margin: rem(180) auto 0 auto;
               position: relative;
         } 
 
@@ -149,42 +165,46 @@
         &__title{
             
             position: absolute;
-            top: rem(90);
-            left: 52%;
+            top: rem(50);
+            left: 49%;
             padding: 0;
         
         }
         &__list{
-            width: rem(500);
+            width: rem(550);
+            margin-right: rem(15);
         }
-        &__item{
-            display: flex;
-            justify-content:space-between;
+        &__img-box{
+            width: rem(114);
+            text-align: center;
+            justify-content: end;
             align-items: center;
-          
+            
         }
+       
         
         &__item-text-box{
                
             text-align: justify;
-           width: rem(400);
-            
+           width: rem(350); 
+           margin-left: rem(15);
         }
         &__img--onright{
-            margin-left: rem(20);
-
+            margin-left: rem(10);
+            
+       
         }
         &__screen-shot{
-            margin-top: rem(140);
+            margin-top: rem(100);
+            width: auto;
         }
         &__img-screen{
-                
-            width: rem(650);
-            height: rem(519);
-            
-        }
-   
-        
+       
+            width: rem(500);
+       height: rem(519);
+       overflow: hidden;
+         
+         }
     
 }}
 
@@ -194,24 +214,39 @@
             @include flex-center;
             margin-top: rem(70);
             
-        }
+        
 
         
-        .get__content-box{
-           
+        &__content-box{
+              max-width: rem(1200);
               margin: rem(0) auto rem(0) auto;
         }
        
-        .get__title{
+        &__title{
             font-size: rem(48);
             line-height: rem(50);
         }
-        .get__list{
+        &__list{
             width: rem(550);
-            margin-right: rem(48);
+            margin-right: rem(40);
 
         }
-        .get__title{
-            left: 50%;
+        &__item-text-box{
+               
+            text-align: justify;
+           width: rem(405); 
+           margin-left: 0;
+       
+        }
+        &__title{
+            left: 48%;
+        }
+        &__img-screen{
+       
+            width: rem(650);
+           height: rem(519);
+      
+         
+         }
         }
     }
