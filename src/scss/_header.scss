@@ -7,6 +7,7 @@
 
 .header__container{
     margin: 0 auto;
+    max-width: rem(1200);
 }
 
 .header__menu{
@@ -19,7 +20,8 @@
     @include flex-center;
     padding: 0 10px;
     padding: rem(30) 0 rem(30) 0;
-    margin-bottom: rem(84);
+    margin-bottom: rem(96);
+    overflow-x: hidden;
 
     @media screen and (max-width: 481px) {
         height: rem(103);
@@ -37,7 +39,7 @@
     color: $primary-violet;
     display: flex;
     align-items: center;
-    column-gap: 17px;
+    column-gap: rem(17);
     margin-right: rem(312);
     max-width: rem(160);
     .logo__img{
@@ -56,14 +58,19 @@
         display: block;
     }
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 481px) {
         position: absolute;
-        left: 20px;
-        top: 28px;
+        left: rem(20);
+        top: rem(32);
     }
 
-    
+    @media screen and (min-width: 481px) and (max-width: 992px) {
+        position: absolute;
+        left: rem(20);
+        top: rem(22);
+    }
 }
+
 .logo__text{
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -88,11 +95,12 @@
 
     @media screen and (max-width: 481px) {
        display: none;
+       top: 0;
     }
 
     @media screen and (max-width: 992px) {
         position: relative;
-        top: 30px;
+        top: rem(30);
     }
     
 }
@@ -108,20 +116,23 @@
 .header__button {
     margin-left: rem(47);
     @include button;
-    width: rem(145);
+    min-width: rem(145);
     height: rem(37);
     font-weight: 700;
     line-height: rem(17);
     
 
     @media screen and (max-width: 481px) {
-        
+        position: absolute;
+        top: rem(34);
+        right: rem(92);
+        min-width: rem(119) ;
     }
  
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 481px) and (max-width: 992px) {
         position: absolute;
-        top: 24px;
-        right: 20px;
+        top: rem(24);
+        right: rem(20);
     }
 
 }
@@ -133,12 +144,14 @@
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
+    max-width: rem(713);
+    padding: 0 rem(10);
 
     @media screen and (max-width: 481px) {
         max-width: rem(299);
     }
  
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 481px) and (max-width: 992px) {
         max-width: rem(600);
         
     }
@@ -149,7 +162,7 @@
     font-size: rem(82);
     line-height: rem(82);
     color: #fff;
-    padding-bottom: 19px;
+    padding-bottom: rem(19);
     margin: 0;
 
     @media screen and (max-width: 481px) {
@@ -157,7 +170,7 @@
         line-height: rem(48);
     }
  
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 481px) and (max-width: 992px) {
         font-size: rem(72);
         line-height: rem(72);
         
@@ -172,11 +185,14 @@
     color: $primary-violet;
     padding-bottom: rem(19);
     @media screen and (max-width: 481px) {
-        font-size: rem(18);
-        line-height: rem(24);
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 400;
+        font-size: rem(18); 
+        line-height: rem(18);
+        text-transform: capitalize;
     }
  
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 481px) and (max-width: 992px) {
         font-size: rem(24);
         line-height: rem(24);
         
@@ -193,12 +209,13 @@
     @media screen and (max-width: 481px) {
         font-size: rem(14);
         line-height: rem(14);
+        padding-bottom: rem(387);
     }
  
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 481px) and (max-width: 992px) {
         font-size: rem(14);
         line-height: rem(14);
-        padding-bottom: rem(462);
+        padding-bottom: rem(407);
     }
 }
 
@@ -206,8 +223,11 @@
     @include flex-center;
     flex-direction: column;
     position: relative;
-    top: 48px;
+    top: rem(62);
     font-family: 'Montserrat', sans-serif;
+    @media screen and (max-width: 481px) {
+        top: 0;
+    }
     .download__button{
         @include button;
         width: rem(390);
@@ -222,6 +242,7 @@
             height: rem(45);
             font-size: rem(18);
             line-height: rem(20);
+            margin-bottom: rem(13);
         }
     }
     .download__button:hover{
@@ -233,7 +254,148 @@
         font-weight: 400;
         font-size: rem(14);
         line-height: rem(15);
+        @media screen and (max-width: 481px) {
+            font-size: rem(14);
+            line-height: rem(14);
+        }
+    }
+}
+
+@media (max-width: 481px){
+    .header{
+        height: rem(718);
+    }
+}
+
+
+.header__body{
     
+    @media (max-width: 481px){
+    position: relative;
+    justify-content: flex-end;
+    }
+}
+
+@media (max-width: 481px){
+    .header__list{
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.header__list li{
+    list-style: none;
+    height: rem(88);
+    padding: 0px 0px 0px 39px;
+    border-top: 3px solid #3B3B3B;  
+}
+
+.header__list li:first-child{
+    border-top: none;
+}
+.header__list li:last-child{
+    border-bottom: 3px solid #3B3B3B;;
+}
+}
+
+@media (max-width: 481px) {
+    body.lock{
+        overflow: hidden;
+    }
+    .header__body{
+        height: rem(103);
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: rem(26);
+        height: rem(23);
+        z-index: 3;
+        right: rem(5);
+        top: rem(3);
+    }
+    .header__burger span{
+        position: absolute;
+        background-color: white;
+        border-radius: rem(5);
+        width: rem(26);
+        height: rem(3);
+        top: rem(10);
+        transition:  all 0.3s ease 0s;
+    }
+    .header__burger::before,
+    .header__burger::after{
+        content: '';
+        border-radius: 5px;
+        background-color: white;
+        position: absolute;
+        width: rem(26);
+        height: rem(3);
+        transition:  all 0.3s ease 0s;
+    }
+    .header__burger::before{
+        width: rem(15);
+        left: rem(10);
+    }
+    .header__burger::after{
+        bottom: 0;
     }
 
+    .header__burger.active span{
+        transform: scale(0);
+    }
+
+    .header__burger.active::before{
+        transform: rotate(45deg);
+        top: rem(7);
+        width: rem(26);
+        left: rem(1);
+    }
+    
+    .header__burger.active::after{
+        transform: rotate(-45deg);
+        bottom: rem(13);
+    }
+    .header__menu{
+        position: fixed;
+        right: rem(14);
+        top: -100%;
+        width: rem(292);
+        height: rem(379);
+        overflow: auto;
+        background-color:  #333333;
+        transition:  all 0.3s ease 0s;
+    }
+
+    .header__menu.active{
+        top: rem(103);
+    }
+    .header__list{
+        display: block;
+        top: 0;
+        margin: 0;
+    }
+    .header__link {
+        color: white;
+        position: relative;
+        top: rem(34);
+        letter-spacing: 1.1px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: rem(26);
+        line-height: rem(26);
+    }
+    .header__list li a:hover{
+        color: $primary-violet;
+        &::after{
+            content: '';
+            background-color: $primary-violet;
+            display: block;
+            position: relative;
+            width: rem(8);
+            height: rem(53);
+            right: rem(39);
+            bottom: rem(41);
+        }
+    }
 }
