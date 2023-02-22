@@ -1,28 +1,27 @@
-
-
-
 .get{
    
-   
-    &__container{
+    font-family: 'Montserrat';
+    font-style: normal;
+    &__content-box{
+        margin: rem(95) auto rem(6) auto;
+    
         min-width: rem(320);
+    }
+    &__container{
         flex-direction: column;
         @include flex-center;
         margin: 0 auto;
-       
-    
+        
     }
     
     &__title{
         text-align: center;
         padding: 0 rem(47);
-        font-family: 'Monserrat', sans-serif;
         font-size: rem(32);
         line-height: rem(38);
         font-weight: 700;
         color: $primary-violet;
         margin-bottom: rem(-20);
-        margin-top: rem(95);
         
     }
     &__title::after{
@@ -35,7 +34,7 @@
     }
     &__list{
         text-align: center;
-       width: rem(277);
+    min-width: rem(277);
        padding: 0;
     }
     &__item{
@@ -47,7 +46,7 @@
     }
 
     &__item-title{
-        font-family: 'Monserrat', sans-serif;
+        
         font-size: rem(16);
         font-weight: 400;
         line-height: rem(16);
@@ -56,7 +55,7 @@
     }
     
     &__item-text{
-        font-family: 'Lato', sans-serif;
+       
         font-size: rem(14);
         font-weight: 400;
         line-height: rem(21);
@@ -64,29 +63,41 @@
         
     }
     &__screen-shot{
-       margin: rem(50) 0 rem(6) auto;  
+       margin-top: rem(95);
+       margin-left: auto;
+       margin-right: 0;
+        
     }
     &__img-screen{
-        width: rem(317);
-        height: rem(381);
+       
+       width: rem(317);
+       height: rem(381);
+    
     }
     }
     
     
     @media (min-width: 481px) {
         .get{
+           
+            &__content-box{
+                margin-top: rem(140);
+                justify-content: center; 
+                align-items: center; 
+            }
             &__title{
+                margin-top: 0;
                 font-size: rem(42);
                 line-height: rem(44);
             }
             &__list{
                 display: block;
-                width: rem(700);
+                margin: 0 auto;
 
             }
             &__item{
                display: flex;
-               justify-content:space-around;
+               justify-content:space-between;
                align-items: center;
                
             }
@@ -94,92 +105,145 @@
             &__item-text-box{
                
                 text-align: justify;
-                width: rem(500);
+                width: rem(300);
                 
             }
             &__img--onright{
-                margin-right: 0;
+                margin-left: rem(18);
+                
+                
              }
             &__img-box{
-                 width: rem(114);
+                width: rem(114);
                 text-align: center;
                 justify-content: center;
                 align-items: center;
+                margin-right: rem(20);
             }
+           
             &__img-screen{
+            
+                width: rem(700); 
+                height: rem(519); 
                 
-                width: rem(650);
-                height: rem(519);
             }
         }
     }
 
+    @media (min-width: 650px){
+        .get__item-text-box{
+             
+            
+         width: rem(500);
+            
+        }
+    }
     @media (min-width: 993px){
         
         .get{
+            background: #F4F4F4;
+            padding-bottom: rem(35);
+            padding-top: rem(98);
+            
             
         &__content-box{
-           
               display: block;
-              margin-top: rem(70);
-              padding-top: rem(65); 
-        }   
+              position: relative;
+        } 
+
         &__container{
             display: flex;
             flex-direction: row;
-           justify-content: space-between;
+            justify-content: space-between;
         
        
         }
        
         &__title{
-            font-size: rem(48);
-            line-height: rem(50);
-            position: absolute;
-            margin-top: rem(10);
-            left: 51%;
-          
-           
-         
-        }
-        
-        &__item{
-            display: flex;
-            justify-content:space-around;
-            align-items: center;
-           
             
-         }
+            position: absolute;
+            top: rem(50);
+            left: 49%;
+            padding: 0;
+        
+        }
+        &__list{
+            width: rem(550);
+            margin-right: rem(15);
+        }
+        &__img-box{
+            width: rem(114);
+            text-align: center;
+            justify-content: end;
+            align-items: center;
+            
+        }
+       
         
         &__item-text-box{
                
             text-align: justify;
-           
+           width: rem(350); 
+           margin-left: rem(15);
+        }
+        &__img--onright{
+            margin-left: rem(10);
             
+       
+        }
+        &__screen-shot{
+            margin-top: rem(100);
+            width: auto;
         }
         &__img-screen{
-                
-            width: rem(650);
-            height: rem(519);
-            
-            margin-left: rem(30);
-        }
-   
-        
+       
+            width: rem(500);
+       height: rem(519);
+       overflow: hidden;
+         
+         }
     
 }}
 
-@media (min-width: 993px){
-    .get{
-    background: #F4F4F4;
-     
-        }
-    }
+
     @media (min-width: 1200px){
         .get{
-           
             @include flex-center;
-            margin: 0 auto;
+            margin-top: rem(70);
             
-        }   
+        
+
+        
+        &__content-box{
+              max-width: rem(1200);
+              margin: rem(0) auto rem(0) auto;
+        }
+       
+        &__title{
+            font-size: rem(48);
+            line-height: rem(50);
+        }
+        &__list{
+            width: rem(550);
+            margin-right: rem(40);
+
+        }
+        &__item-text-box{
+               
+            text-align: justify;
+           width: rem(405); 
+           margin-left: 0;
+       
+        }
+        &__title{
+            left: 48%;
+        }
+        &__img-screen{
+       
+            width: rem(650);
+           height: rem(519);
+      
+         
+         }
+        }
     }
