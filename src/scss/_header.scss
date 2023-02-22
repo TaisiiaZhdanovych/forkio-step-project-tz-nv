@@ -61,10 +61,10 @@
     @media screen and (max-width: 481px) {
         position: absolute;
         left: rem(20);
-        top: rem(32) !important;
+        top: rem(32);
     }
 
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 481px) and (max-width: 992px) {
         position: absolute;
         left: rem(20);
         top: rem(22);
@@ -123,13 +123,13 @@
     
 
     @media screen and (max-width: 481px) {
-        position: absolute !important;
-        top: rem(34) !important;
-        right: rem(92) !important;
-        min-width: rem(119) !important;
+        position: absolute;
+        top: rem(34);
+        right: rem(92);
+        min-width: rem(119) ;
     }
  
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 481px) and (max-width: 992px) {
         position: absolute;
         top: rem(24);
         right: rem(20);
@@ -148,10 +148,10 @@
     padding: 0 rem(10);
 
     @media screen and (max-width: 481px) {
-        max-width: rem(299) !important;
+        max-width: rem(299);
     }
  
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 481px) and (max-width: 992px) {
         max-width: rem(600);
         
     }
@@ -166,11 +166,11 @@
     margin: 0;
 
     @media screen and (max-width: 481px) {
-        font-size: rem(48) !important;
-        line-height: rem(48) !important;
+        font-size: rem(48);
+        line-height: rem(48);
     }
  
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 481px) and (max-width: 992px) {
         font-size: rem(72);
         line-height: rem(72);
         
@@ -187,12 +187,12 @@
     @media screen and (max-width: 481px) {
         font-family: 'Montserrat', sans-serif; 
         font-weight: 400;
-        font-size: rem(18) !important; 
-        line-height: rem(18) !important;
+        font-size: rem(18); 
+        line-height: rem(18);
         text-transform: capitalize;
     }
  
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 481px) and (max-width: 992px) {
         font-size: rem(24);
         line-height: rem(24);
         
@@ -207,12 +207,12 @@
     text-transform: uppercase;
 
     @media screen and (max-width: 481px) {
-        font-size: rem(14) !important;
-        line-height: rem(14) !important;
-        padding-bottom: rem(387) !important;
+        font-size: rem(14);
+        line-height: rem(14);
+        padding-bottom: rem(387);
     }
  
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 481px) and (max-width: 992px) {
         font-size: rem(14);
         line-height: rem(14);
         padding-bottom: rem(407);
@@ -226,7 +226,7 @@
     top: rem(62);
     font-family: 'Montserrat', sans-serif;
     @media screen and (max-width: 481px) {
-        top: 0 !important;
+        top: 0;
     }
     .download__button{
         @include button;
@@ -238,11 +238,11 @@
         margin-bottom: rem(18);
         
         @media screen and (max-width: 481px) {
-            width: rem(290) !important;
-            height: rem(45) !important;
-            font-size: rem(18) !important;
-            line-height: rem(20) !important;
-            margin-bottom: rem(13) !important;
+            width: rem(290);
+            height: rem(45);
+            font-size: rem(18);
+            line-height: rem(20);
+            margin-bottom: rem(13);
         }
     }
     .download__button:hover{
@@ -255,15 +255,15 @@
         font-size: rem(14);
         line-height: rem(15);
         @media screen and (max-width: 481px) {
-            font-size: rem(14) !important;
-            line-height: rem(14) !important;
+            font-size: rem(14);
+            line-height: rem(14);
         }
     }
 }
 
 @media (max-width: 481px){
     .header{
-        height: rem(718) !important;
+        height: rem(718);
     }
 }
 
@@ -372,7 +372,7 @@
     }
     .header__list{
         display: block;
-        top: 0 !important;
+        top: 0;
         margin: 0;
     }
     .header__link {
@@ -398,6 +398,4 @@
             bottom: rem(41);
         }
     }
-
-
 }

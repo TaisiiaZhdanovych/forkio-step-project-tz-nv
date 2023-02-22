@@ -3,14 +3,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #4B3B4E;
     @media screen and (max-width: 481px) {
-        background-image: url("../img/reviews_section/talking_bg(480).png") !important;
+        background-image: url("../img/reviews_section/talking_bg(480).png");
     }
 
     &__container {
         margin: 0 auto;
         padding: 0 rem(10);
-        @media screen and (max-width: 992px) {
+        @media screen and (min-width: 481px) and (max-width: 992px) {
             max-width: rem(768);
         }
     }
@@ -26,12 +27,12 @@
         color: $white;
         
         @media screen and (max-width: 481px) {
-            font-size: rem(36) !important;
-            line-height: rem(48) !important;
-            padding-top: rem(57) !important;
-            padding-bottom: rem(53) !important;
+            font-size: rem(36);
+            line-height: rem(48);
+            padding-top: rem(57);
+            padding-bottom: rem(53);
         }
-        @media screen and (max-width: 992px) {
+        @media screen and (min-width: 481px) and (max-width: 992px) {
             font-size: rem(42);
             line-height: rem(44);
         }
@@ -42,9 +43,9 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         @media screen and (max-width: 481px) {
-            grid-template-columns: 1fr !important;
+            grid-template-columns: 1fr;
         }
-        @media screen and (max-width: 992px) {
+        @media screen and (min-width: 481px) and (max-width: 992px) {
             grid-template-columns: repeat(2,1fr);
         }
         }
@@ -58,10 +59,10 @@
         text-align: center;
         margin-bottom: rem(116);
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 481px) {
             margin-bottom: rem(58);
         }
-        @media screen and (max-width: 992px) {
+        @media screen and (min-width: 481px) and (max-width: 992px) {
             margin-bottom: rem(45);
         }
 
@@ -73,13 +74,13 @@
         }
         .card__pic--w{
             margin-bottom: rem(5);
-            @media screen and (max-width: 992px) {
+            @media screen and (min-width: 481px) and (max-width: 992px) {
                 margin-bottom: rem(22);
             }
         }
         .card__pic--budha{
             margin-bottom: rem(33);
-            @media screen and (max-width: 992px) {
+            @media screen and (min-width: 481px) and (max-width: 992px) {
                 margin-top: rem(10);
             }
         }
@@ -106,11 +107,11 @@
         padding-bottom: rem(26);
         
         @media screen and (max-width: 481px) {
-            padding-top: rem(37) !important;
-            max-width: rem(251) !important;
+            padding-top: rem(37);
+            max-width: rem(251);
         }
         
-        @media screen and (max-width: 992px) {
+        @media screen and (min-width: 481px) and (max-width: 992px) {
             padding-top: rem(69);
             max-width: rem(704);
         }
@@ -132,9 +133,9 @@
             margin-bottom: 0;
             border: none;
             @media screen and (max-width: 481px) {
-                max-width: rem(245) !important;
+                max-width: rem(245);
             }
-            @media screen and (max-width: 992px) {
+            @media screen and (min-width: 481px) and (max-width: 992px) {
                 max-width: rem(555);
             }
         }      
