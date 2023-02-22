@@ -3,6 +3,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     &__content-box{
+        
         margin: rem(95) auto rem(6) auto;
     
         min-width: rem(320);
@@ -11,17 +12,20 @@
         flex-direction: column;
         @include flex-center;
         margin: 0 auto;
-        
+      
     }
-    
-    &__title{
+    &__title-box{
+       
         text-align: center;
-        padding: 0 rem(47);
+        padding: 0 rem(30);
+        margin-bottom: rem(-20);
+    }
+    &__title{
+        
         font-size: rem(32);
         line-height: rem(38);
         font-weight: 700;
         color: $primary-violet;
-        margin-bottom: rem(-20);
         
     }
     &__title::after{
@@ -39,6 +43,7 @@
     }
     &__item{
         margin-top: rem(36);
+        
     }
     
     &__img--onright{
@@ -62,10 +67,12 @@
         color: $light-grey;
         
     }
+    
     &__screen-shot{
        margin-top: rem(95);
        margin-left: auto;
        margin-right: 0;
+       
         
     }
     &__img-screen{
@@ -82,11 +89,15 @@
            
             &__content-box{
                 margin-top: rem(140);
-                justify-content: center; 
-                align-items: center; 
+                
+            }
+            &__title-box{
+                padding: 0;
             }
             &__title{
+                
                 margin-top: 0;
+                
                 font-size: rem(42);
                 line-height: rem(44);
             }
@@ -105,7 +116,7 @@
             &__item-text-box{
                
                 text-align: justify;
-                width: rem(300);
+                width: rem(350);
                 
             }
             &__img--onright{
@@ -123,8 +134,9 @@
            
             &__img-screen{
             
-                width: rem(700); 
-                height: rem(519); 
+                width: rem(480);
+                height: rem(519);
+               
                 
             }
         }
@@ -137,6 +149,11 @@
          width: rem(500);
             
         }
+        .get__img-screen{
+            
+            width: rem(590);
+            height: rem(519);}
+        
     }
     @media (min-width: 993px){
         
@@ -197,9 +214,9 @@
         }
         &__img-screen{
        
-            width: rem(500);
-       height: rem(519);
-       overflow: hidden;
+            width: rem(650);
+           height: rem(519);
+      
          
          }
     
@@ -210,6 +227,7 @@
         .get{
             @include flex-center;
             margin-top: rem(70);
+            margin: 0 auto;
             
         
 
@@ -225,14 +243,15 @@
         }
         &__list{
             width: rem(550);
-            margin-right: rem(40);
+            margin-right: rem(25);
 
         }
         &__item-text-box{
                
             text-align: justify;
            width: rem(405); 
-           margin-left: 0;
+           margin-left: rem(5);
+           padding: 0;
        
         }
         &__title{
