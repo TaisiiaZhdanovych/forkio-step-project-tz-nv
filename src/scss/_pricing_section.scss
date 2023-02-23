@@ -6,14 +6,13 @@
     background-repeat: no-repeat;
     padding-top: rem(14);
     padding-bottom: rem(100);
-
+    min-width: rem(320);
 }
 .pricing{
 
 &__container{
     font-family: 'Montserrat';
     font-style: normal;
-    min-width: rem(320);
     max-width: rem(1200);
     flex-direction: column;
     @include flex-center;
@@ -39,22 +38,28 @@ margin: rem(10) auto 0 auto;
     margin: 0 auto;
     justify-content: center;
     text-align: center;
-    width: rem(257);
-    height: rem(460);
+    width: rem(257); 
+    height: rem(460); 
+   
+
     background: rgba(255, 255, 255, 0.11);
     margin-top: rem(18);
 }
 
 &__item--active{
     background: rgba(70, 48, 72, 0.84);
-    width: rem(299);
+    width: rem(299); 
     height: rem(560);
+   
+ 
 
 }
 &__item-link-box{
     background: rgba(255, 255, 255, 0.06);
-    width: rem(256);
-    height: rem(97);
+    width: rem(256); 
+    height: rem(97); 
+   
+   
     @include flex-center;
     text-transform: uppercase;
 }
@@ -62,6 +67,7 @@ margin: rem(10) auto 0 auto;
     background: rgba(0, 0, 0, 0.11);
     height: rem(111);
     width: rem(299);
+    
 }
 
 &__link{
@@ -82,6 +88,7 @@ color: $white;
     align-items:center;
     
     padding: rem(20) rem(23) rem(0) rem(23); 
+   
 }
 
 &__item-content--active{
@@ -178,26 +185,31 @@ margin-top: rem(20);
             margin-bottom: rem(39);
             margin-top: rem(98);  
         }
-        &__list{
-            display: flex;
-            flex-wrap: wrap;
-            width: 591px;
-  
-        }
-        &__item{
-           margin-right: 0;
-           margin-left: rem(25);
-    
-        }
-        &__item--active{
-           margin-left: rem(-16);
-        }
-        &__item--center{
-            margin-top: rem(60);
-            
-        }
+        
 
     }
+}
+@media (min-width: 590px){
+    .pricing{
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        width: 590px;
+
+    }
+    &__item{
+       margin-right: 0;
+       margin-left: rem(25);
+
+    }
+    &__item--active{
+       margin-left: rem(-16);
+    }
+    &__item--center{
+        margin-top: rem(60);
+        
+    }
+}
 }
 
 @media (min-width: 993px){
