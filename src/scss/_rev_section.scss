@@ -6,8 +6,11 @@
     @include flex-center;
     margin: 0 auto;
     min-width: rem(320);
+    padding: 0 rem(10);
 }
 &__title{
+    font-family: 'Montserrat';
+    font-style: normal;
     text-align: center;
     padding: 0 1rem;
     text-transform: uppercase;
@@ -19,7 +22,8 @@
     color: $primary-grey;
 }
 &__subtitle{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
+    font-style: normal;
     max-width: rem(861);
     margin-top: 0;
     margin-bottom: rem(22);
@@ -71,19 +75,21 @@
     
 }
 &__name{
-    font-family: 'Monserrat', sans-serif;
-    font-size: rem(14);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: rem(16);
     font-weight: 700;
     line-height: rem(20);
     color:$accent-grey;
    
 }
 &__count{
-    
-    font-family: 'Monserrat', sans-serif;
-    font-size: rem(12);
+   
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: rem(13.5);
     font-weight: 700;
-    line-height: rem(20);
+    line-height: rem(16);
     color:$accent-grey;
     margin-right: rem(7);
     margin-left: rem(3);
@@ -94,7 +100,6 @@
   .rev{
         
         &__title{
-            font-family: 'Monserrat', sans-serif;
             text-align: center;
             text-transform: uppercase;
             margin-top: rem(150);
