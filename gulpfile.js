@@ -48,3 +48,12 @@ export { build }
 
 // Виконання сценарію за замовчуванням
 gulp.task('default', dev);
+
+
+import ghPages from 'gulp-gh-pages';
+
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
