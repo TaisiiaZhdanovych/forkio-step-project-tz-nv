@@ -180,11 +180,7 @@ margin-top: rem(20);
 @media (min-width: 481px){
     .pricing{
         padding-bottom: rem(150);
-        &__container{
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-        }
+        
         &__title{
             font-size: rem(42);
             line-height: rem(44);
@@ -199,6 +195,9 @@ margin-top: rem(20);
     &__list{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
     }
     &__item{
        margin-right: 0;
