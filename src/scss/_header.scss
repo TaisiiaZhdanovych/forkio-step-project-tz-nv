@@ -3,11 +3,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @media screen and (max-width: 320px) {
+        min-width: rem(320);
+    }
 }
 
 .header__container{
     margin: 0 auto;
     max-width: rem(1200);
+    @media screen and (max-width: 320px) {
+        max-width: rem(320);
+    }
 }
 
 .header__menu{
@@ -69,6 +75,9 @@
         left: rem(20);
         top: rem(22);
     }
+    @media screen and (max-width: 1170px) {
+        margin-right: rem(104);
+    }
 }
 
 .logo__text{
@@ -92,6 +101,9 @@
     flex-wrap: nowrap;
     column-gap: rem(47);
     padding: 0;
+    @media screen and (max-width: 520px) {
+        column-gap: rem(35);
+    }
 
     @media screen and (max-width: 481px) {
        display: none;
