@@ -48,6 +48,7 @@ CSS препроцесор SASS SCSS
 1. Зверстала секцію Revolutionary Editor
 2. Зверстала секцію Here is what you get
 3. Зверстала секцію Fork Subscription Pricing
+4. Розміщення на GitHub Pages
 
 
 ## Посилання на проект
